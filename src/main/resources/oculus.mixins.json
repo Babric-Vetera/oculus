@@ -1,14 +1,15 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.fabricmc.example.mixin",
+  "package": "com.github.qe7.oculus.mixins",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
   ],
   "client": [
-    "MixinGuiMainMenu",
-    "MixinGuiScreen",
-    "accessor.GuiAccessor"
+    "AccessorMinecraft",
+    "MixinEntityRenderer",
+    "MixinGameSettings",
+    "MixinMinecraft"
   ],
   "injectors": {
     "defaultRequire": 1
